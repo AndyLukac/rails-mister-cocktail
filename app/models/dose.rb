@@ -4,9 +4,9 @@ class Dose < ApplicationRecord
 
   validates :ingredient, uniqueness: { scope: :cocktail }
 
-  @dose = Dose.where(ingredient_id: @ingredient.id)
-  @doses.each do |dose|
-    dose.destroy
-  end
-  @ingredient.destroy
+  # @dose = Dose.where(ingredient_id: @ingredient.id)
+  # @doses.each do |dose|
+  #   dose.destroy
+  # end
+  # @ingredient.destroy
 end
